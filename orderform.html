@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel ="stylesheet" href = "css/style.css">
+</head>
+<body>
+    <a href = "danielstore.html">Main Page</a>
+    <h2>Order Form</h2>
+    <form>
+        Name: <input type="text" name = "name"><br>
+        Password: <input type = "password" name="pwd"><br>
+        Order Date: <input type = "date" name="dob">
+        <table>
+            <tr>
+                <td valign = "top">
+                    Game: <br>
+                    <select name = "game">
+                        <option value = "halo">Halo</option>
+                        <option value = "gears">Gears</option>
+                        <option value = "pokemon">Pokemon</option>
+                        <option value = "dyinglight">Dying Light</option>
+                    </select>
+                </td>
+                <td>
+                    Payment: <br>
+                    <input type = "radio" name = "pmt" value = "cash" checked>Cash<br>
+                    <input type = "radio" name = "pmt" value = "credit" >Credit<br>
+                    <input type = "radio" name = "pmt" value = "debit" >Debit<br>
+                </td>
+                <td valign = "top">
+                    Other: <br>
+                    <input type = "checkbox" name = "pickup" value = "InStore"> I will pickup In-Store<br>
+                    <input type = "checkbox" name = "deliver" value = "Home"> I will have delivered at my home
+                </td>
+            </tr>
+        </table>
+        <input type = "submit" value= "Submit">     <input type = "reset">
+    </form>
+</body>
+</html>
